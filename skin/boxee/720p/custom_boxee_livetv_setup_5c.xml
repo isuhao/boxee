@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<window id="4576" type="dialog">
+	<defaultcontrol always="true">1</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>tempmock10.png</texture>
+		</control>
+
+		<control type="group">
+			<!--<include>Dialog_Popup_Animation</include>-->
+			<posx>214</posx>
+			<posy>118</posy>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>852</width>
+				<height>544</height>
+				<texture srcborder="51" border="34">dialog_bg.png</texture>
+				<colordiffuse>BBFFFFFF</colordiffuse>
+			</control>
+			
+		</control>	
+		
+		<control type="button" id="1">
+			<posx>-200</posx>
+			<posy>-200</posy>
+			<onclick>ActivateWindow(4577)</onclick>
+		</control>
+		
+	</controls>
+</window>

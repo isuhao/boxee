@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<window id="4577" type="dialog">
+	<defaultcontrol always="true">81</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<!--<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>tempmock11.png</texture>
+		</control>-->
+
+		<control type="group">
+			<include>Dialog_Popup_Animation</include>
+			<posx>22</posx>
+			<posy>118</posy>
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1236</width>
+				<height>580</height>
+				<texture srcborder="51" border="34">dialog_bg.png</texture>
+			</control>
+			
+			<control type="image">
+				<posx>66</posx>
+				<posy>66</posy>
+				<width>12</width>
+				<height>12</height>
+				<texture>graphic_steps_dot.png</texture>
+			</control>
+			
+			<control type="image">
+				<posx>82</posx>
+				<posy>66</posy>
+				<width>12</width>
+				<height>12</height>
+				<texture>graphic_steps_dot.png</texture>
+			</control>
+			
+			<control type="image">
+				<posx>98</posx>
+				<posy>66</posy>
+				<width>12</width>
+				<height>12</height>
+				<texture>graphic_steps_dot.png</texture>
+			</control>
+			
+			<control type="image">
+				<posx>114</posx>
+				<posy>66</posy>
+				<width>12</width>
+				<height>12</height>
+				<texture>graphic_steps_circle.png</texture>
+			</control>
+			
+			<control type="label">
+				<description>Header1</description>
+				<posx>63</posx>
+				<posy>125</posy>
+				<width>550</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[58036]</label>
+				<wrapmultiline>false</wrapmultiline>
+				<include>Header_Heidi</include>
+			</control>
+			
+			<control type="wraplist" id="81">
+				<posx>-41</posx>
+				<posy>166</posy>
+				<width>1400</width>
+				<height>400</height>
+				<orientation>horizontal</orientation>
+				<focusposition>3</focusposition>
+				<scrolltime>200</scrolltime>
+				<preloaditems>6</preloaditems>
+				<onup>1</onup>
+				<ondown>1</ondown>
+				
+				<itemlayout width="192" height="190">
+					<control type="image">
+						<posx>-8</posx>
+						<posy>0</posy>
+						<width>180</width>
+						<height>260</height>
+						<texture srcborder="24" border="16">thumbnail-bg-unfocused.png</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+				
+					<control type="largeimage">
+						<posy>8</posy>
+						<width>164</width>
+						<height>244</height>
+						<info>ListItem.Thumb</info>
+						<aspectratio>scale</aspectratio>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout width="192" height="190">
+					<control type="image">
+						<posx>-8</posx>
+						<posy>0</posy>
+						<width>180</width>
+						<height>260</height>
+						<texture srcborder="24" border="16">thumbnail-bg-focused.png</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+				
+					<control type="largeimage">
+						<posy>8</posy>
+						<width>164</width>
+						<height>244</height>
+						<info>ListItem.Thumb</info>
+						<aspectratio>scale</aspectratio>
+					</control>
+
+				</focusedlayout>
+			</control>
+			
+			<control type="image">
+				<posx>-22</posx>
+				<posy>162</posy>
+				<width>160</width>
+				<height>268</height>
+				<texture>livetv/skirt-left.png</texture>
+			</control>
+			
+			<control type="image">
+				<posx>1098</posx>
+				<posy>162</posy>
+				<width>160</width>
+				<height>268</height>
+				<texture>livetv/skirt-right.png</texture>
+			</control>
+			
+			<control type="label">
+				<posx>64</posx>
+				<posy>452</posy>
+				<width>780</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[58037]</label>
+				<wrapmultiline>true</wrapmultiline>
+				<include>LargeText_Heidi</include>
+			</control>
+			
+			<control type="button" id="1">
+				<posx>860</posx>
+				<posy>460</posy>
+				<width>302</width>
+				<height>50</height>
+				<include>Button_Heidi</include>
+				<label>[UPPERCASE]$LOCALIZE[209][/UPPERCASE]</label>
+				<onclick></onclick>
+				<onup>81</onup>
+				<ondown>81</ondown>
+				<onleft>2</onleft>
+				<onright>2</onright>
+			</control>
+			
+		</control>	
+				
+	</controls>
+</window>

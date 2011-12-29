@@ -1,0 +1,86 @@
+<window id="10420">
+	<defaultcontrol>3</defaultcontrol>
+	<controls>
+		<include>Dialog_Popup_Background</include>
+		<control type="group">
+			<include>Dialog_Popup_Animation</include>
+			<posx>465</posx>
+			<posy>45</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>630</height>
+				<texture border="20">browse_menu_dialog_background.png</texture>
+				<colordiffuse>FF212121</colordiffuse>
+			</control>
+			<control type="label" id="1">
+				<description>heading label</description>
+				<posx>25</posx>
+				<posy>25</posy>
+				<height>28</height>
+				<width>300</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<font>font28b</font>
+				<label>$LOCALIZE[54688]</label>
+			</control>
+			<control type="fixedlist" id="3">
+				<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(DialogProgress.xml)">Conditional</animation>
+				<focusposition>3</focusposition>
+				<posx>15</posx>
+				<posy>70</posy>
+				<width>320</width>
+				<height>496</height>
+				<onright>-</onright>
+				<ondown>255</ondown>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="62">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>320</width>
+						<height>54</height>
+						<colordiffuse>FF464646</colordiffuse>
+						<texture border="16">button_8_pixel.png</texture>
+					</control>
+					<control type="label">
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>
+						<height>54</height>
+						<font>font24b</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+						<textcolor>white</textcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="62">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>320</width>
+						<height>54</height>
+						<colordiffuse>FF10B9F2</colordiffuse>
+						<texture border="16">button_8_pixel.png</texture>
+					</control>
+					<control type="label">
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>
+						<height>54</height>
+						<font>font24b</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<info>ListItem.Label</info>
+						<textcolor>black</textcolor>
+						<scroll>true</scroll>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</controls>
+</window>

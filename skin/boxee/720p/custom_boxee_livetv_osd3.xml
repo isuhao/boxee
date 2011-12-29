@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<window id="4589" type="dialog">
+	<defaultcontrol always="true">3333</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<control type="list" id="5000">
+            <description>info</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>0</width>
+            <height>0</height>
+            <visible>false</visible>
+            <itemlayout height="0">
+          </itemlayout>
+            <focusedlayout height="0">
+          </focusedlayout>
+        </control>
+        
+        <control type="group">
+        	<posx>231</posx>
+        	<posy>107</posy>
+        	<control type="image">
+        		<posx>0</posx>
+        		<posy>0</posy>
+        		<width>779</width>
+        		<height>491</height>
+        		<texture srcborder="51" border="34">dialog_bg.png</texture>
+        	</control>
+        	<control type="image">
+        		<posx>89</posx>
+        		<posy>21</posy>
+        		<width>24</width>
+        		<height>452</height>
+        		<texture flipx="true">mediaaction/graphic-divider-quick-vert.png</texture>
+        	</control>
+    		<control type="label">
+    			<posx>134</posx>
+    			<posy>40</posy>
+    			<width>300</width>
+    			<height>20</height>
+    			<font>font20b</font>
+    			<textcolor>boxeegreenheidi</textcolor>
+    			<align>left</align>
+    			<aligny>top</aligny>
+    			<label>[UPPERCASE][B]Live Episode[/B][/UPPERCASE]</label>
+    		</control>
+    		<control type="grouplist">
+    			<posx>134</posx>
+    			<posy>66</posy>
+    			<itemgap>0</itemgap>
+    			<orientation>vertical</orientation>
+    			<usecontrolcoords>true</usecontrolcoords>
+    			<control type="label">
+    				<width>588</width>
+    				<height min="0" max="49">auto</height>
+    				<font>font40bls</font>
+    				<align>left</align>
+    				<aligny>top</aligny>
+    				<label>[B]$INFO[Container(5000).ListItem.Label][/B]</label>
+    				<textcolor>whiteheidi</textcolor>
+    				<wrapmultiline>false</wrapmultiline>
+    			</control>
+    			<control type="label">
+    				<width>588</width>
+    				<height min="0" max="100">auto</height>
+    				<font>font21bls</font>
+    				<align>left</align>
+    				<aligny>top</aligny>
+    				<label>$INFO[Container(5000).ListItem.Season,Season , · ]$INFO[Container(5000).ListItem.Episode,Episode ,]$INFO[formattime(Container(5000).ListItem.Year), · , $LOCALIZE[51818]]$INFO[Container(5000).ListItem.MPAA, · $LOCALIZE[563] ,][CR]LIVE · $INFO[Container(5000).ListItem.property(programtime)] · CC · HD</label>
+    				<textcolor>whiteheidi</textcolor>
+    				<wrapmultiline>true</wrapmultiline>
+    			</control>
+    			<control type="image">
+    				<posy>3</posy>
+    				<width>572</width>
+    				<height>24</height>
+    				<texture>mainmenu/graphic-divider-bot.png</texture>
+    			</control>
+    			<control type="label">
+    				<posy>7</posy>
+    				<width>588</width>
+    				<height>220</height>
+    				<font>font20b</font>
+    				<textcolor>lightgreyheidi</textcolor>
+    				<align>left</align>
+    				<aligny>top</aligny>
+    				<label>[B]$INFO[Container(5000).ListItem.Label,,[CR]][/B]$INFO[Container(5000).ListItem.PlotOutline,,]</label>
+    				<wrapmultiline>true</wrapmultiline>
+    			</control>
+    		</control>
+    		<control type="grouplist" id="3333">
+    			<posx>-138</posx>
+    			<posy>34</posy>
+    			<orientation>vertical</orientation>
+    			<itemgap>14</itemgap>
+    			<usecontrolcoords>true</usecontrolcoords>
+    			<control type="group">
+    				<control type="image">
+    					<visible>Control.HasFocus(3330)</visible>
+    					<posx>0</posx>
+    					<posy>0</posy>
+    					<width>224</width>
+    					<height>52</height>
+    					<texture srcborder="24" border="16">button-focused.png</texture>
+    				</control>
+    				<control type="button" id="3330">
+    					<posx>181</posx>
+    					<posy>8</posy>
+    					<width>35</width>
+    					<height>35</height>
+    					<ondown>3331</ondown>
+    					<texturefocus>mediaaction/icon-share.png</texturefocus>
+    					<texturenofocus>mediaaction/icon-share-off.png</texturenofocus>
+    				</control>
+    				<control type="label">
+    					<visible>Control.HasFocus(3330)</visible>
+    					<posx>14</posx>
+    					<posy>1</posy>
+    					<width>155</width>
+    					<height>48</height>
+    					<align>left</align>
+    					<aligny>center</aligny>
+    					<font>font24b</font>
+    					<textcolor>whiteheidi</textcolor>
+    					<label>[B]Watch Channel[/B]</label>
+    				</control>
+    			</control>
+    			<control type="group">
+    				<control type="image">
+    					<visible>Control.HasFocus(3331)</visible>
+    					<posx>0</posx>
+    					<posy>0</posy>
+    					<width>224</width>
+    					<height>52</height>
+    					<texture srcborder="24" border="16">button-focused.png</texture>
+    				</control>
+    				<control type="button" id="3331">
+    					<posx>181</posx>
+    					<posy>8</posy>
+    					<width>35</width>
+    					<height>35</height>
+    					<onup>3330</onup>
+    					<ondown>8000</ondown>
+    					<texturefocus>mediaaction/icon-share.png</texturefocus>
+    					<texturenofocus>mediaaction/icon-share-off.png</texturenofocus>
+    				</control>
+    				<control type="label">
+    					<visible>Control.HasFocus(3331)</visible>
+    					<posx>14</posx>
+    					<posy>1</posy>
+    					<width>155</width>
+    					<height>48</height>
+    					<align>left</align>
+    					<aligny>center</aligny>
+    					<font>font24b</font>
+    					<textcolor>whiteheidi</textcolor>
+    					<label>[B]Share[/B]</label>
+    				</control>
+    			</control>
+    			<control type="group">
+    				<posy>-31</posy>
+    				<control type="image">
+    					<visible>ControlGroup(8000).HasFocus</visible>
+    					<posx>0</posx>
+    					<posy>0</posy>
+    					<width>224</width>
+    					<height>52</height>
+    					<texture srcborder="24" border="16">button-focused.png</texture>
+    				</control>
+    				<control type="group" id="8000">
+    					<posx>181</posx>
+    					<posy>8</posy>
+    					<!-- Add to favorites -->
+    					<control type="button" id="8004">
+    						<width>35</width>
+    						<height>35</height>
+    						<visible>true + !Window.Property(is-favorite)</visible>
+    						<texturefocus>mediaaction/icon-favorite-add-on.png</texturefocus>
+    						<texturenofocus>mediaaction/icon-favorite-add-off.png</texturenofocus>
+    						<onleft>-</onleft>
+    						<onright>-</onright>
+    						<ondown>-</ondown>
+    						<onup>3331</onup>
+    						<!--<onclick>Container.SetViewMode(50)</onclick>-->
+    						<onclick>SetVisible(8005)</onclick>
+    						<onclick>SetFocus(8005)</onclick>
+    					</control>
+    					<!-- Remove from favorites -->
+    					<control type="button" id="8005">
+    						<width>35</width>
+    						<height>35</height>
+    						<visible>Window.Property(is-favorite)</visible>
+    						<texturefocus>mediaaction/icon-favorite-remove-on.png</texturefocus>
+    						<texturenofocus>mediaaction/icon-favorite-remove-off.png</texturenofocus>
+    						<onleft>-</onleft>
+    						<onright>-</onright>
+    						<ondown>-</ondown>
+    						<onup>3331</onup>
+    						<!--<onclick>Container.SetViewMode(51)</onclick>-->
+    						<onclick>SetVisible(8004)</onclick>
+    						<onclick>SetFocus(8004)</onclick>
+    					</control>
+    				</control>
+    				<control type="label">
+    					<visible>Control.HasFocus(8004)</visible>
+    					<posx>14</posx>
+    					<posy>8</posy>
+    					<width>155</width>
+    					<height>35</height>
+    					<align>left</align>
+    					<aligny>center</aligny>
+    					<font>font24b</font>
+    					<textcolor>whiteheidi</textcolor>
+    					<label>[B]Add to Favs[/B]</label>
+    				</control>
+    				<control type="label">
+    					<visible>Control.HasFocus(8005)</visible>
+    					<posx>14</posx>
+    					<posy>8</posy>
+    					<width>155</width>
+    					<height>35</height>
+    					<align>left</align>
+    					<aligny>center</aligny>
+    					<font>font24b</font>
+    					<textcolor>whiteheidi</textcolor>
+    					<label>[B]Remove[/B]</label>
+    				</control>
+    			</control>
+    		</control>
+        </control>
+   	</controls>
+</window>

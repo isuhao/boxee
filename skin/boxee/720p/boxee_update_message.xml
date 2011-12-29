@@ -1,0 +1,179 @@
+﻿<?xml version="1.0"?>
+<window type="dialog" id="69">
+	<defaultcontrol always="true">9201</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<!-- control type="image">
+			<height>720</height>
+			<width>1280</width>
+			<texture>Fiona-Dialog-Update-Optional.jpg</texture>
+		</control -->
+		<include>Dialog_Popup_Background</include>
+		<control type="group">
+			<include>Dialog_Popup_Animation</include>
+			<!-- animation effect="slide" start="0,0" end="0,-120" time="200" condition="Control.IsVisible(90)">Conditional</animation -->
+			<control type="group" id="90">
+				<visible>false</visible>
+				<posx>346</posx>
+				<posy>100</posy>
+				<onup>200</onup>
+				<control type="image">
+					<description>browse background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>587</width>
+					<height>560</height>
+					<texture border="20">browse_menu_dialog_background.png</texture>
+					<colordiffuse>FF212121</colordiffuse>
+				</control>
+				<control type="image">
+					<description>textbox background</description>
+					<posx>15</posx>
+					<posy>340</posy>
+					<width>560</width>
+					<height>200</height>
+					<texture border="20">browse_menu_dialog_background.png</texture>
+					<colordiffuse>FFFFFFFF</colordiffuse>
+				</control>				
+				<control type="textbox" id="100">
+					<description>review</description>
+					<posx>38</posx>
+					<posy>355</posy>
+					<width>500</width>
+					<height>170</height>
+					<pagecontrol>110</pagecontrol>
+					<label>-</label>
+					<font>font26</font>
+					<textcolor>black</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+					<visible>true</visible>
+				</control>
+				<control type="scrollbar" id="110">
+					<description>scroll bar indicator for lists</description>
+					<posx>553</posx>
+					<posy>355</posy>
+					<width>12</width>
+					<height>180</height>
+					<onright>-</onright>
+					<onleft>-</onleft>
+					<onup>220</onup>
+					<ondown>-</ondown>
+					<include>ScrollBarCommonProperties</include>
+				</control>
+			</control>
+			<control type="group">
+				<posx>346</posx>
+				<posy>79</posy>
+				<control type="image">
+					<description>browse background</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>587</width>
+					<height>353</height>
+					<texture border="20">browse_menu_dialog_background.png</texture>
+					<colordiffuse>FF212121</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>256</posx>
+					<posy>30</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture>icons/icon_update_small.png</texture>
+				</control>				
+				<control type="label" id="120">
+					<posx>26</posx>
+					<posy>130</posy>
+					<width>540</width>
+					<height>40</height>
+					<font>font24</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>-</label>
+					<textcolor>white</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+				<control type="label" id="130">
+					<posx>26</posx>
+					<posy>256</posy>
+					<width>540</width>
+					<height>90</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font24</font>
+					<label>-</label>
+					<wrapmultiline>true</wrapmultiline>
+				</control>				
+				<control type="group" id="200">
+					<posx>13</posx>
+					<posy>180</posy>
+					<!--Dismiss-->					
+					<control type="button" id="210">
+						<description>Dismiss</description>
+						<posx>386</posx>
+						<posy>0</posy>
+						<width>160</width>
+						<height>70</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<focusedcolor>black</focusedcolor>
+						<texturenofocus border="30" diffuse="grey_button.png">browse_menu_dialog_button_focus.png</texturenofocus>
+						<texturefocus border="30" diffuse="masks/10b9f2.png">browse_menu_dialog_button_focus.png</texturefocus>
+						<font>font26</font>
+						<label>$LOCALIZE[53239]</label>
+						<onup>-</onup>
+						<ondown>110</ondown>
+						<onleft>220</onleft>
+						<onright>-</onright>
+					</control>
+					<!--More Details-->
+					<control type="togglebutton" id="220">
+						<description>More/Less Details</description>						
+						<posx>200</posx>
+						<posy>0</posy>
+						<width>160</width>
+						<height>70</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<focusedcolor>black</focusedcolor>
+						<texturenofocus border="30" diffuse="grey_button.png">browse_menu_dialog_button_focus.png</texturenofocus>
+						<texturefocus border="30" diffuse="masks/10b9f2.png">browse_menu_dialog_button_focus.png</texturefocus>
+						<alttexturenofocus border="30" diffuse="grey_button.png">browse_menu_dialog_button_focus.png</alttexturenofocus>
+						<alttexturefocus border="30" diffuse="masks/10b9f2.png">browse_menu_dialog_button_focus.png</alttexturefocus>
+						<font>font26</font>
+						<usealttexture>Control.IsVisible(90)</usealttexture>
+						<label>$LOCALIZE[53262]</label>
+						<altlabel>$LOCALIZE[53225]</altlabel>
+						<onup>-</onup>
+						<ondown>110</ondown>
+						<onleft>230</onleft>
+						<onright>210</onright>
+						<onclick>setVisible(90)</onclick>
+						<altclick>setHidden(90)</altclick>
+					</control>
+					<!--Install or OK-->
+					<control type="button" id="230">
+						<description>Install or OK</description>
+						<posx>14</posx>
+						<posy>0</posy>
+						<width>160</width>
+						<height>70</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<focusedcolor>black</focusedcolor>
+						<texturenofocus border="30" diffuse="grey_button.png">browse_menu_dialog_button_focus.png</texturenofocus>
+						<texturefocus border="30" diffuse="masks/10b9f2.png">browse_menu_dialog_button_focus.png</texturefocus>
+						<font>font26</font>
+						<label>$LOCALIZE[186]</label>
+						<onup>-</onup>
+						<ondown>110</ondown>
+						<onleft>-</onleft>
+						<onright>220</onright>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
